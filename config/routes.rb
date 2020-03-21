@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   root "posts#index"
-  resources :post do
+  resources :users
+  resources :posts do
     collection do
       post :confirm
     end
